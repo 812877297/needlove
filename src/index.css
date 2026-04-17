@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@400;700;800&family=Space+Grotesk:wght@400;500;700&display=swap');
+
+@theme {
+  --color-primary: #003d9b;
+  --color-primary-container: #0052cc;
+  --color-on-primary: #ffffff;
+  --color-secondary: #ae2f34;
+  --color-secondary-container: #ff6b6b;
+  --color-on-secondary: #ffffff;
+  --color-tertiary: #752847;
+  --color-tertiary-container: #923f5e;
+  --color-background: #f8f9fa;
+  --color-on-background: #191c1d;
+  --color-surface: #f8f9fa;
+  --color-on-surface: #191c1d;
+  --color-surface-variant: #e1e3e4;
+  --color-on-surface-variant: #434654;
+  --color-outline: #737685;
+  --color-surface-container: #edeeef;
+  --color-surface-container-low: #f3f4f5;
+  --color-surface-container-lowest: #ffffff;
+  --color-surface-container-high: #e7e8e9;
+  --color-surface-container-highest: #e1e3e4;
+
+  --font-headline: "Manrope", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-label: "Space Grotesk", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-on-surface font-body;
+  }
+}
